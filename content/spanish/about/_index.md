@@ -2,7 +2,7 @@
 title: "Sobre Nosotros - Automóviles Sánchez García"
 meta_title: "Quiénes Somos"
 description: "Conoce la historia y el equipo detrás de Talleres S.G. en Granada."
-image: "/images/hero-workshop.png"
+image: "/images/hero-workshop2.png"
 layout: "about"
 draft: false
 ---
@@ -12,6 +12,7 @@ draft: false
 Contamos con un equipo de profesionales apasionados por la automoción y equipados con las herramientas más modernas del sector. Ya sea para un simple mantenimiento o una reparación compleja, en nuestro taller tratamos cada vehículo como si fuera el nuestro.
 
 ### Nuestros Valores
+
 - **Transparencia:** Explicamos cada avería y presupuesto detalladamente.
 - **Calidad:** Utilizamos recambios homologados y técnicas recomendadas por fabricantes.
 - **Cercanía:** Somos tu taller de barrio, siempre dispuestos a ayudarte.

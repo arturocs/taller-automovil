@@ -1,13 +1,20 @@
 {{ define "main" }}
-  <section class="section-sm">
-    <div class="container">
-      <div class="row justify-center">
-        <div class="md:col-10 lg:col-7 text-center">
-          {{ partial "image" (dict "Src" .Params.image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6" "Size" "200x200") }}
-          <h2 class="h3 mb-6">{{ .Title }}</h2>
-          <div class="content">{{ .Content }}</div>
-        </div>
+<section class="section-sm">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="md:col-10 lg:col-7 text-center">
+        {{ if .Params.image }}
+        {{ if (fileExists (printf "assets/%s" .Params.image)) }}
+        {{ $image:= resources.Get .Params.image }}
+        <img loading="lazy" decoding="async" class="mx-auto mb-6 h-auto max-w-sm rounded-lg" width="{{$image.Width}}" height="{{$image.Height}}" src="{{$image.RelPermalink}}" alt="{{.Title}}">
+        {{ else }}
+        <img loading="lazy" decoding="async" class="mx-auto mb-6 h-auto max-w-sm rounded-lg" src="{{.Params.image | relURL}}" alt="{{.Title}}">
+        {{ end }}
+        {{ end }}
+        <h2 class="h3 mb-6">{{ .Title }}</h2>
+        <div class="content text-left">{{ .Content }}</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 {{ end }}

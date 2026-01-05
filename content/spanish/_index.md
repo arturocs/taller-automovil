@@ -3,7 +3,7 @@
 banner:
   title: "Talleres S.G. - Tu Taller de Confianza en Granada"
   content: "En Automóviles Sánchez García nos dedicamos al cuidado integral de tu vehículo. Con años de experiencia y tecnología de vanguardia, garantizamos un servicio rápido y profesional."
-  image: "/images/hero-workshop.png"
+  image: "/images/hero-workshop2.png"
   button:
     enable: true
     label: "Pide Cita Ahora"
