@@ -37,7 +37,3 @@ name = "Contacto"
 url = "/contact"
 weight = 3
 
-[[footer]]
-name = "Política de Privacidad"
-url = "/privacy-policy"
-weight = 4
