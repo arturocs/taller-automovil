@@ -1,29 +1,33 @@
 ---
 enable: true
-title: "What Users Are Saying About Hugoplate"
-description: "Don't just take our word for it - hear from some of our satisfied users!  Check out some of our testimonials below to see what others are saying about Hugoplate."
+title: "Lo Que Dicen Nuestros Clientes"
+description: "No te fíes solo de nuestra palabra - escucha a nuestros clientes satisfechos. Echa un vistazo a algunas de las opiniones que han dejado sobre Talleres S.G."
 
 # Testimonials
 testimonials:
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Mercedes Sánchez Vera"
+    designation: "Review de Google"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    rating: 5
+    content: "Atención muy personalizada, muy buenos profesionales y con gran experiencia. Los precios de los servicios que prestan son muy competitivos. Siempre quedo muy satisfecha de su servicio."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Arturo Cortés"
+    designation: "Review de Google"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    rating: 5
+    content: "Servicio rápido y eficaz."
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Daniel Pérez Vázquez"
+    designation: "Review de Google"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    rating: 5
+    content: ""
 
-  - name: "Marvin McKinney"
-    designation: "Web Designer"
+  - name: "Maria Otero"
+    designation: "Review de Google"
     avatar: "/images/avatar-sm.png"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iusto illo molestias, assumenda expedita commodi inventore non itaque molestiae voluptatum dolore, facilis sapiente, repellat veniam."
+    rating: 5
+    content: ""
 
 # don't create a separate page
 build:
