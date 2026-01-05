@@ -3,56 +3,62 @@
     <div class="row items-center py-10">
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
         <!-- navbar brand/logo -->
-        <a
-          class="navbar-brand inline-block"
-          href="{{ site.Home.RelPermalink }}">
-          {{/* https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
-          {{ partial "logo" }}
+        <a class="navbar-brand inline-block" href="{{ .Site.Home.RelPermalink }}">
+          {{ $logo := .Site.Params.logo }}
+          {{ $logo_dark := .Site.Params.logo_darkmode }}
+          {{ $width := "160px" }}
+          {{ $logoResource := resources.Get $logo }}
+          {{ $logoDarkResource := resources.Get $logo_dark }}
+
+          {{ if $logoResource }}
+          <img src="{{ $logoResource.RelPermalink }}" class="inline-block dark:hidden"
+            style="width:{{ $width }};height:auto" alt="{{ .Site.Params.logo_text }}">
+          {{ else }}
+          <img src="{{ $logo | relURL }}" class="inline-block dark:hidden" style="width:{{ $width }};height:auto"
+            alt="{{ .Site.Params.logo_text }}">
+          {{ end }}
+
+          {{ if $logoDarkResource }}
+          <img src="{{ $logoDarkResource.RelPermalink }}" class="hidden dark:inline-block"
+            style="width:{{ $width }};height:auto" alt="{{ .Site.Params.logo_text }}">
+          {{ else }}
+          <img src="{{ $logo_dark | relURL }}" class="hidden dark:inline-block" style="width:{{ $width }};height:auto"
+            alt="{{ .Site.Params.logo_text }}">
+          {{ end }}
         </a>
       </div>
       <div class="lg:col-6 mb-8 text-center lg:mb-0">
         <ul>
-          {{ range site.Menus.footer }}
-            <li class="m-3 inline-block">
-              <a
-                {{ if findRE `^http` .URL }}
-                  target="_blank" rel="noopener"
-                {{ end }}
-                href="{{ if findRE `^#` .URL }}
+          {{ range .Site.Menus.footer }}
+          <li class="m-3 inline-block">
+            <a {{ if findRE `^http` .URL }} target="_blank" rel="noopener" {{ end }} href="{{ if findRE `^#` .URL }}
                   {{ if not $.IsHome }}
-                    {{ site.Home.RelPermalink }}
+                    {{ .Site.Home.RelPermalink }}
                   {{ end }}{{ .URL }}
                 {{ else }}
                   {{ .URL | relLangURL }}
-                {{ end }}"
-                >{{ .Name }}</a
-              >
-            </li>
+                {{ end }}">{{ .Name }}</a>
+          </li>
           {{ end }}
         </ul>
       </div>
       <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
         <ul class="social-icons">
-          {{ range site.Data.social.main }}
-            <li>
-              <a
-                target="_blank"
-                aria-label="{{ .name }}"
-                rel="nofollow noopener"
-                href="{{ .link | safeURL }}">
-                <i class="{{ .icon }}"></i>
-              </a>
-            </li>
+          {{ range .Site.Data.social.main }}
+          <li>
+            <a target="_blank" aria-label="{{ .name }}" rel="nofollow noopener" href="{{ .link | safeURL }}">
+              <i class="{{ .icon }}"></i>
+            </a>
+          </li>
           {{ end }}
         </ul>
       </div>
     </div>
   </div>
   <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div
-      class="text-text-light dark:text-darkmode-text-light container text-center">
+    <div class="text-text-light dark:text-darkmode-text-light container text-center">
       <p>
-        {{ site.Params.copyright | markdownify }}
+        {{ .Site.Params.copyright | markdownify }}
       </p>
     </div>
   </div>
