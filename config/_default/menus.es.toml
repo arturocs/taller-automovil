@@ -1,0 +1,43 @@
+############# Spanish navigation ##############
+
+# main menu
+[[main]]
+name = "Inicio"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Quiénes Somos"
+url = "/about"
+weight = 2
+
+[[main]]
+name = "Servicios"
+url = "/services"
+weight = 3
+
+[[main]]
+name = "Contacto"
+url = "/contact"
+weight = 4
+
+# footer menu
+[[footer]]
+name = "Quiénes Somos"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Servicios"
+url = "/services"
+weight = 2
+
+[[footer]]
+name = "Contacto"
+url = "/contact"
+weight = 3
+
+[[footer]]
+name = "Política de Privacidad"
+url = "/privacy-policy"
+weight = 4
