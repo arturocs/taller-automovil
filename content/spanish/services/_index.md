@@ -1,6 +1,6 @@
 ---
 title: "Nuestros Servicios"
-meta_title: "Servicios Mecánicos en Granada"
+meta_title: "Servicios Mecánicos"
 description: "Descubre la amplia gama de servicios mecánicos que ofrecemos en Talleres S.G. - Automóviles Sánchez García."
 layout: "default"
 draft: false
