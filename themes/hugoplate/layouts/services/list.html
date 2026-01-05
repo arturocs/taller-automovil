@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+<section class="section-sm">
+    <div class="container">
+        {{ if .Content }}
+        <div class="content mb-14">
+            {{ .Content }}
+        </div>
+        {{ end }}
+        <div class="row justify-center">
+            {{ range .Params.services }}
+            <div class="md:col-6 lg:col-4 mb-6">
+                <div class="bg-light dark:bg-darkmode-light p-8 text-center rounded-lg h-full">
+                    <i class="{{ .icon }} text-primary text-4xl mb-4"></i>
+                    <h3 class="h4 mb-3">{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

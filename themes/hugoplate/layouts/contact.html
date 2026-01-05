@@ -6,28 +6,29 @@
   <div class="container">
     <div class="row">
       <div class="md:col-10 lg:col-6 mx-auto">
-        <form action="{{ site.Params.contact_form_action }}" method="POST">
-          <div class="mb-6">
-            <label for="name" class="form-label">
-              Nombre Completo <span class="text-red-500">*</span>
-            </label>
-            <input id="name" name="name" class="form-input" placeholder="Tu nombre completo" type="text" />
-          </div>
-          <div class="mb-6">
-            <label for="email" class="form-label">
-              Correo Electrónico <span class="text-red-500">*</span>
-            </label>
-            <input id="email" name="email" class="form-input" placeholder="tu.correo@email.com" type="email" />
-          </div>
-          <div class="mb-6">
-            <label for="message" class="form-label">
-              ¿En qué podemos ayudarte? <span class="text-red-500">*</span>
-            </label>
-            <textarea id="message" name="message" class="form-input" placeholder="Escribe tu mensaje aquí..."
-              rows="8"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+        <div class="content text-center">
+          <h3 class="mb-8 text-2xl">Estamos disponibles mediante las siguientes vías:</h3>
+          <ul class="list-none pl-0 text-xl">
+            <li class="mb-6">
+              <i class="fa-solid fa-phone text-primary mr-3 text-2xl"></i> <strong>Teléfono:</strong> <a
+                href="tel:958190815" class="text-primary hover:underline">958 19 08 15</a>
+            </li>
+            <li class="mb-6">
+              <i class="fa-solid fa-envelope text-primary mr-3 text-2xl"></i> <strong>Email:</strong> <a
+                href="mailto:email@ejemplo.com" class="text-primary hover:underline">email@ejemplo.com</a>
+            </li>
+            <li class="mb-6">
+              <i class="fa-brands fa-whatsapp text-primary mr-3 text-2xl"></i> <strong>WhatsApp:</strong> <a
+                href="https://wa.me/34600000000" class="text-primary hover:underline">+34 600 00 00 00</a>
+            </li>
+            <li class="mb-6">
+              <i class="fa-solid fa-clock text-primary mr-3 text-2xl"></i> <strong>Horario:</strong><br>
+              <span class="ml-10">Lunes a Viernes</span><br>
+              <span class="ml-10">Mañanas: 9:00 - 14:00</span><br>
+              <span class="ml-10">Tardes: 16:00 - 20:00</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
