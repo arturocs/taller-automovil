@@ -19,7 +19,6 @@ features:
       - "Revisión pre-ITV completa"
       - "Frenos, suspensión y amortiguación"
       - "Mantenimiento preventivo multimarca"
-      - "Garantía en todas las reparaciones"
     button:
       enable: false
       label: ""
@@ -45,7 +44,6 @@ features:
       - "Presupuestos sin compromiso y precios competitivos."
       - "Recambios de primeras marcas para mayor durabilidad."
       - "Atención personalizada de la mano de expertos mecánicos."
-      - "Ubicación céntrica y fácil acceso en la zona de Granada."
     button:
       enable: false
       label: ""
