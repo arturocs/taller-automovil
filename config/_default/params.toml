@@ -62,17 +62,17 @@ content = "<span class='text-center block'>♥️ Loving Hugoplate? <a class='un
 # seo meta data for OpenGraph / Twitter Card
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
-keywords = ["Boilerplate", "Hugo"]
-description = "Sitio web de Talleres S.G."
-author = "zeon.studio"
-twitter = "zeon_studio"
+keywords = ["taller mecánico", "reparación de coches", "Pinos Puente", "Granada", "mantenimiento automotriz", "neumáticos", "diagnosis avanzada", "Automóviles Sánchez García"]
+description = "Talleres S.G. (Automóviles Sánchez García) en Pinos Puente, Granada. Tu taller mecánico de confianza experto en mecánica general, neumáticos y diagnosis avanzada."
+author = "Talleres S.G."
+twitter = ""
 image = "images/og-image.png"
 
 
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
 [site_verification]
-google = ""   # Your verification code
+google = "vjWZja7FN6RNp2sDRCrP3bHlwmszO7ZVCmcNODZFgyA"   # Your verification code
 bing = ""     # Your verification code
 baidu = ""    # Your verification code
 facebook = "" # Your verification code
