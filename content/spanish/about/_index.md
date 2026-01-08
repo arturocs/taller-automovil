@@ -2,7 +2,7 @@
 title: "Sobre Nosotros - Automóviles Sánchez García"
 meta_title: "Quiénes Somos"
 description: "Conoce la historia y el equipo detrás de Talleres S.G."
-image: "/images/hero-workshop2.png"
+image: "/images/hero-workshop3.png"
 layout: "about"
 draft: false
 ---

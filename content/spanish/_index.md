@@ -3,7 +3,7 @@
 banner:
   title: "Talleres S.G. - Tu Taller de Confianza"
   content: "En Automóviles Sánchez García nos dedicamos al cuidado integral de tu vehículo. Con años de experiencia y tecnología de vanguardia, garantizamos un servicio rápido y profesional."
-  image: "/images/hero-workshop2.png"
+  image: "/images/hero-workshop3.png"
   button:
     enable: true
     label: "Pide Cita Ahora"
@@ -25,7 +25,7 @@ features:
       link: ""
 
   - title: "Neumáticos y Diagnosis Avanzada"
-    image: "/images/service-tires.png"
+    image: "/images/service_tires_diagnosis_local.png"
     content: "Contamos con equipos de diagnosis de última generación para detectar cualquier fallo electrónico en tu vehículo de forma precisa."
     bulletpoints:
       - "Venta y montaje de neumáticos"
@@ -38,7 +38,7 @@ features:
       link: "/services"
 
   - title: "¿Por qué elegir Talleres S.G.?"
-    image: "/images/service-3.png"
+    image: "/images/service_trust_local2.png"
     content: "Somos un taller familiar comprometido con el cliente. Honestidad y transparencia en cada presupuesto."
     bulletpoints:
       - "Presupuestos sin compromiso y precios competitivos."
