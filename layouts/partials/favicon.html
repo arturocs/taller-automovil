@@ -1,0 +1,28 @@
+{{ $favicon := "" }}
+{{ if site.Params.favicon }}
+{{ if (fileExists (add "assets/" site.Params.favicon)) }}
+{{ $favicon = resources.Get site.Params.favicon }}
+{{ end }}
+{{ end }}
+
+{{ if $favicon }}
+{{/* Standard favicon.ico for older browsers (fallback) */}}
+<link rel="shortcut icon" href="{{ $favicon.RelPermalink }}">
+
+{{/* PNG Favicons in sizes recommended by Google (multiples of 48) */}}
+{{ $size48 := $favicon.Fill "48x48 webp" }}
+{{ $size96 := $favicon.Fill "96x96 webp" }}
+{{ $size144 := $favicon.Fill "144x144 webp" }}
+
+<link rel="icon" type="image/webp" sizes="48x48" href="{{ $size48.RelPermalink }}">
+<link rel="icon" type="image/webp" sizes="96x96" href="{{ $size96.RelPermalink }}">
+<link rel="icon" type="image/webp" sizes="144x144" href="{{ $size144.RelPermalink }}">
+
+{{/* Standard PNG fallback just in case webp isn't preferred for favicon */}}
+{{ $size48png := $favicon.Fill "48x48 png" }}
+<link rel="icon" type="image/png" sizes="48x48" href="{{ $size48png.RelPermalink }}">
+
+{{/* Apple Touch Icon */}}
+{{ $apple := $favicon.Fill "180x180 png" }}
+<link rel="apple-touch-icon" sizes="180x180" href="{{ $apple.RelPermalink }}">
+{{ end }}
